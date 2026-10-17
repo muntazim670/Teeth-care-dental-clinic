@@ -2,6 +2,7 @@ import React from 'react';
 import { CheckCircle2, Shield, Clock, Phone, MapPin } from 'lucide-react';
 import { businessData } from '../data/business';
 import { Language, translations } from '../data/translations';
+import { clinicImages } from '../assets/images';
 
 interface AboutProps {
   currentLang: Language;
@@ -22,7 +23,7 @@ export const About: React.FC<AboutProps> = ({ currentLang, onBookClick }) => {
           <div className="lg:col-span-5 order-2 lg:order-1">
             <div className="relative rounded-2xl overflow-hidden border border-slate-200 shadow-md">
               <img
-                src="/src/assets/images/about_clinic_interior_1792236173995.jpg"
+                src={clinicImages.about}
                 alt="Teeth Care Dental Clinic clean reception and consultation area in Karachi"
                 className="w-full h-80 sm:h-96 lg:h-[480px] object-cover"
                 referrerPolicy="no-referrer"

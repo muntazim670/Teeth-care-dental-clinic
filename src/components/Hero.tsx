@@ -2,6 +2,7 @@ import React from 'react';
 import { Calendar, ArrowRight, Phone, MapPin, Clock, Star, ExternalLink, ShieldCheck } from 'lucide-react';
 import { businessData } from '../data/business';
 import { Language, translations } from '../data/translations';
+import { clinicImages } from '../assets/images';
 
 interface HeroProps {
   currentLang: Language;
@@ -95,7 +96,7 @@ export const Hero: React.FC<HeroProps> = ({ currentLang, onBookClick }) => {
           <div className="lg:col-span-5 relative">
             <div className="relative rounded-2xl overflow-hidden shadow-lg border border-slate-200/90 bg-slate-900">
               <img
-                src="/src/assets/images/hero_dental_care_1792236173750.jpg"
+                src={clinicImages.hero}
                 alt="Teeth Care Dental Clinic modern hygienic treatment suite and consultation chair in Karachi"
                 className="w-full h-80 sm:h-96 lg:h-[460px] object-cover hover:scale-[1.01] transition-transform duration-500"
                 referrerPolicy="no-referrer"

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Maximize2, X, Info } from 'lucide-react';
 import { Language, translations } from '../data/translations';
+import { clinicImages } from '../assets/images';
 
 interface GalleryProps {
   currentLang: Language;
@@ -20,25 +21,25 @@ export const Gallery: React.FC<GalleryProps> = ({ currentLang }) => {
   const galleryItems: GalleryItem[] = [
     {
       id: 'suite',
-      src: '/src/assets/images/hero_dental_care_1792236173750.jpg',
+      src: clinicImages.hero,
       title: t.gallery.caption1,
       subtitle: 'Modern ergonomic dental chair and clean operatory lighting.',
     },
     {
       id: 'reception',
-      src: '/src/assets/images/about_clinic_interior_1792236173995.jpg',
+      src: clinicImages.about,
       title: t.gallery.caption2,
       subtitle: 'Comfortable waiting area and consultation space for patients.',
     },
     {
       id: 'instruments',
-      src: '/src/assets/images/treatment_setup_1792236174782.jpg',
+      src: clinicImages.instruments,
       title: t.gallery.caption3,
       subtitle: 'Strict autoclave sanitization and precision medical-grade tools.',
     },
     {
       id: 'operatory',
-      src: '/src/assets/images/gallery_operatory_1792236175277.jpg',
+      src: clinicImages.operatory,
       title: t.gallery.caption4,
       subtitle: 'Comprehensive diagnostic monitors and clinical care environment.',
     },

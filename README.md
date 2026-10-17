@@ -76,7 +76,36 @@ npm run dev
 npm run build
 ```
 
-## 🌐 Deploying to Vercel
+---
+
+## 🌐 Deploying to GitHub Pages (Recommended Method)
+
+This project is pre-configured with `base: './'` in `vite.config.ts` and includes a GitHub Actions workflow in `.github/workflows/deploy.yml`.
+
+### Step 1: Push code to your GitHub repository
+If you haven't initialized git yet:
+```bash
+git init
+git add .
+git commit -m "Initial commit for Teeth Care Dental Clinic"
+git branch -M main
+git remote add origin https://github.com/<YOUR-USERNAME>/<YOUR-REPO-NAME>.git
+git push -u origin main
+```
+
+### Step 2: Enable GitHub Pages in your repository settings
+1. Open your repository on **GitHub**.
+2. Click on the **Settings** tab.
+3. On the left sidebar, click **Pages** (under the "Code and automation" section).
+4. Under **Build and deployment > Source**, select:
+   👉 **GitHub Actions**
+5. That's it! GitHub will automatically trigger the deployment workflow.
+6. Within ~1 minute, your site will be live at:
+   `https://<YOUR-USERNAME>.github.io/<YOUR-REPO-NAME>/`
+
+---
+
+## 🌐 Deploying to Vercel (Alternative)
 
 1. Push this repository to GitHub or GitLab.
 2. In Vercel, click **"Add New Project"** and import the repository.
