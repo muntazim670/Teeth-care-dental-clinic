@@ -1,0 +1,6 @@
+{
+  "name": "Teeth Care Dental Clinic",
+  "description": "Premium website for Teeth Care Dental Clinic in Gulshan-e-Iqbal, Karachi. Verified clinic hours, location directions, dental treatments guide, and appointment requests.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
